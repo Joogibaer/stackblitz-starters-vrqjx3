@@ -1,13 +1,11 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { importProvidersFrom } from '@angular/core';
-import { AppComponent } from './app/app.component';
-import { bootstrapApplication } from '@angular/platform-browser';
+// app.routes.ts
+import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { OrderCreation } from './orderCreation/order.creation.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'orderCreation', component: OrderCreation },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-
 @Component({
   selector: 'app-navigation',
   standalone: true,
@@ -9,4 +8,6 @@ import { RouterModule } from '@angular/router';
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.css',
 })
-export class NavigationComponent {}
+export class NavigationComponent {
+  // You can use the ActivatedRoute service here
+}
